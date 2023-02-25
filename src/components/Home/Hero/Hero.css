@@ -1,0 +1,68 @@
+div#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.heroImages {
+  transform: scale(0.7);
+}
+.heroImages img {
+  max-width: 600px;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.heroText h1 {
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.heroText p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color: var(--para-color);
+}
+
+.heroText {
+  color: var(--heading-color);
+}
+
+@media (max-width: 992px) {
+  div#hero {
+    margin-top: -3.5rem;
+  }
+  .heroImages {
+    display: none;
+  }
+
+  .heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 6rem;
+    background: linear-gradient(#00000000, #000000da),
+      url("https://ychef.files.bbci.co.uk/1600x900/p09xq72k.jpg");
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .heroText h1 {
+    color: #fff;
+    font-size: 5rem;
+  }
+
+  .heroText p {
+    color: #fff;
+    padding: 0 5rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+}
